@@ -1,0 +1,5 @@
+<!-- src/client/app.component.html -->
+
+
+<button (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
+<button (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
